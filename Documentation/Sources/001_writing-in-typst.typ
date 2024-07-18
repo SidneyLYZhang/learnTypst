@@ -1,5 +1,6 @@
-#set text(font:"Source Han Sans SC")
+#set text(font:("FiraCode Nerd Font Mono", "Source Han Sans SC"))
 #set text(lang: "zh")
+#show emph: text.with(font: ("Linux Libertine","STKaiti"))
 
 = 用Typst写作
 
@@ -11,7 +12,20 @@
 
 #box(height: 70pt,
   columns(2, gutter: 11pt)[
-  In this report, we will explore the various factors that influence fluid dynamics in glaciers and how they contribute to the formation and behaviour of these natural structures.
-  #image("images/1-right-yulan.png")
+  ```typst In this report, we will explore the various factors that influence fluid dynamics in glaciers and how they contribute to the formation and behaviour of these natural structures.```
+
+  #align(center, image("images/1-right-yulan.png"))
+])
+
+#emph[在本教程中，我们将展示像这样的代码示例。就像在应用程序中一样，第一个面板包含标记，第二个面板显示预览。我们缩小了页面以适应示例，这样你就可以看到发生了什么。]
+
+下一步是添加标题并强调一些文本。Typst 使用简单的标记来完成最常见的格式化任务。要添加标题，请输入 ``` =``` 字符；要用斜体强调一些文本，请将其置于 ``` _下划线_``` 之间。
+
+#box(height: 70pt,
+  columns(2, gutter: 11pt)[
+  ```typst = Introduction
+In this report, we will explore the various factors that influence _fluid dynamics_ in glaciers and how they contribute to the formation and behaviour of these natural structures.```
+
+  #align(center, image("images/1-right-yulan-2.png"))
 ])
 
