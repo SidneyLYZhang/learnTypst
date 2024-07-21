@@ -163,3 +163,46 @@ established in @glacier-melt.
 
   #align(center, image("images/1-right-yulan-9.png"))
 ])
+
+== 数学
+
+在详细阐述了方法部分之后，论文的核心部分便展现在读者眼前：你的方程式。Typst 旨在实现数学排版功能，并采用自身独特的数学符号体系。我们从一个简单的方程式开始。为了指示 Typst 准备接收数学表达式，我们用 `$` 符号将其包围起来：
+
+#box(height: 45pt,
+  columns(2, gutter: 11pt)[
+  ```typst 
+
+The equation $Q = rho A v + C$
+defines the glacial flow rate.```
+
+  #align(center, image("images/1-right-yulan-10.png"))
+])
+
+这个方程式是内嵌式排版的，与周围的文本在同一行中显示。如果您希望将其单独显示在新的一行，则需要在方程式前后各输入一个空格：
+
+#box(height: 60pt,
+  columns(2, gutter: 11pt)[
+  ```typst 
+The flow rate of a glacier is
+defined by the following equation:
+
+$ Q = rho A v + C $```
+
+  #align(center, image("images/1-right-yulan-11.png"))
+])
+
+我们可以发现，Typst 对单个字母 `Q`、`A`、`v` 和 `C` 原样显示，而将 `rho` 转译为了希腊字母。数学模式会始终原样显示单个字母。然而，多个字母会被解释为符号、变量或函数名。若要表示单个字母之间的乘法，只需在它们之间加入空格。
+
+如果你想要表示由多个字母组成的变量，可以将它们用引号括起来：
+
+#box(height: 60pt,
+  columns(2, gutter: 11pt)[
+  ```typst 
+The flow rate of a glacier is given
+by the following equation:
+
+$ Q = rho A v + "time offset" $```
+
+  #align(center, image("images/1-right-yulan-12.png"))
+])
+

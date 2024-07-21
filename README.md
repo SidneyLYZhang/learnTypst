@@ -6,7 +6,7 @@
 
 翻译以下内容：
 
-1. [Tutorial > Writing in Typst](https://typst.app/docs/tutorial/writing-in-typst/) - [001_使用Typst写作](Documentation/Sources/001_writing-in-typst.typ) （[PDF](Documentation/PDF/001_使用Typst写作.pdf)） @20240717
+1. [Tutorial > Writing in Typst](https://typst.app/docs/tutorial/writing-in-typst/) - [001_使用Typst写作](Documentation/Sources/001_writing-in-typst.typ) （[PDF-草稿](Documentation/PDF/001_使用Typst写作.pdf)） @20240717
 2. []() - []() （[PDF]()）
 
 ## My Favorites
