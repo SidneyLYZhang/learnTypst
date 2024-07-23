@@ -6,8 +6,8 @@
 
 翻译以下内容：
 
-1. [Tutorial > Writing in Typst](https://typst.app/docs/tutorial/writing-in-typst/) - [001_使用Typst写作](Documentation/Sources/001_writing-in-typst.typ) （[PDF-草稿](Documentation/PDF/001_使用Typst写作.pdf)） @20240717
-2. []() - []() （[PDF]()）
+1. [Tutorial > Writing in Typst](https://typst.app/docs/tutorial/writing-in-typst/) - [001_使用Typst写作](Documentation/Sources/001_writing-in-typst.typ) （[PDF](Documentation/PDF/001_使用Typst写作.pdf)） @20240717
+2. [Tutorial > Formatting](https://typst.app/docs/tutorial/formatting/) - [002_把文档格式化处理](Documentation/Sources/002_formatting.typ) （[PDF-草稿](Documentation/PDF/002_文档格式化.pdf)）@20240723
 
 ## My Favorites
 
@@ -19,7 +19,7 @@ _暂空缺_
 
 Typst是一种新型的基于标记的科学排版系统。它旨在成为高级工具如LaTeX和更简单工具如Word和Google文档的替代品。我们的目标是构建一个功能强大且使用愉悦的排版工具。
 本文档分为两部分：一个面向初学者的教程，通过实际用例介绍Typst，以及一个全面的参考，讲解Typst的所有概念和功能。
-我们还邀请您加入我们围绕Typst建立的社区。Typst仍然是一个非常年轻的项目，因此您的反馈非常宝贵。 → [_原文_](https://typst.app/docs/)
+我们还邀请您加入我们围绕Typst建立的社区。Typst仍然是一个非常年轻的项目，因此您的反馈非常宝贵。 → [_原文_](https://typst.app/docs/) 
 
 ### 何时使用Typst
 

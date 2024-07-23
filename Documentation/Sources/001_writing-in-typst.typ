@@ -206,3 +206,63 @@ $ Q = rho A v + "time offset" $```
   #align(center, image("images/1-right-yulan-12.png"))
 ])
 
+在你的论文中，你还需要一个求和公式。我们可以使用 `sum` 符号，然后在下标和上标中指定求和的范围。
+
+#box(height: 70pt,
+  columns(2, gutter: 11pt)[
+  ```typst 
+Total displaced soil by glacial flow:
+
+$ 7.32 beta +
+  sum_(i=0)^nabla Q_i / 2 $```
+
+  #align(center, image("images/1-right-yulan-13.png"))
+])
+
+要为符号或变量添加下标，请输入 `_` 字符，然后输入下标内容。同样，使用 `^` 字符可添加上标。如果你的下标或上标由多个元素组成，必须将它们括在圆括号内。
+
+上述示例还向我们展示了如何插入分数：只需在分子和分母之间放置一个 `\` 字符，Typst就会自动将其转换为分数。括号会被智能解析，因此你可以像在计算器中那样输入表达式，Typst会将带括号的子表达式替换为适当的符号表示。
+
+#box(height: 70pt,
+  columns(2, gutter: 11pt)[
+  ```typst 
+Total displaced soil by glacial flow:
+
+$ 7.32 beta +
+  sum_(i=0)^nabla
+    (Q_i (a_i - epsilon)) / 2 $```
+
+  #align(center, image("images/1-right-yulan-14.png"))
+])
+
+并非所有数学结构都有特殊语法。相反，我们使用函数，就像之前见过的 `image` 函数一样。例如，要插入列向量，我们可以使用 #link("https://typst.app/docs/reference/math/vec/")[`vec`] 函数。在数学模式下，函数调用不需要以 `#` 字符开头。
+
+#box(height: 55pt,
+  columns(2, gutter: 11pt)[
+  ```typst 
+
+$ v := vec(x_1, x_2, x_3) $```
+
+  #align(center, image("images/1-right-yulan-15.png"))
+])
+
+某些函数仅在数学模式下可用。例如，#link("https://typst.app/docs/reference/math/variants/#functions-cal")[`cal`] 函数用于排版常用于表示集合的花体字母。#link("https://typst.app/docs/reference/math/")[参考手册的数学部分]提供了数学模式下所有可用函数的完整列表。
+
+还有一点值得注意：许多符号，如箭头，都有很多变体。你可以通过在符号名称后附加一个点和修饰符名称来选择这些变体。
+
+#box(height: 50pt,
+  columns(2, gutter: 11pt)[
+  ```typst 
+
+$ a arrow.squiggly b $```
+
+  #align(center, image("images/1-right-yulan-16.png"))
+])
+
+这种表示法在标记模式下也可用，但符号名称前必须加上 `#sym` 。请参阅#link("https://typst.app/docs/reference/symbols/sym/")[符号部分]以获取所有可用符号的列表。
+
+== 回顾
+
+现在你已经了解了如何在 Typst 中编写基本文档。你学会了如何强调文本、编写列表、插入图像、对齐内容以及排版数学表达式。你还学习了Typst的函数。Typst还允许你在文档中插入许多其他类型的内容，如#link("https://typst.app/docs/reference/model/table/")[表格（tables）]、#link("https://typst.app/docs/reference/visualize/")[图形（shapes）]和#link("https://typst.app/docs/reference/text/raw/")[代码块]。你可以浏览#link("https://typst.app/docs/reference/")[参考手册]以了解更多这些功能和其他特性。
+
+目前，你已完成报告的编写。你已经通过点击右上角的下载按钮保存了PDF文件。然而，你认为报告看起来可能有点过于朴素。在下一节中，我们将学习如何自定义文档的外观。
