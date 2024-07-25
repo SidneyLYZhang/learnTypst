@@ -6,8 +6,9 @@
 
 翻译以下内容：
 
-1. [Tutorial > Writing in Typst](https://typst.app/docs/tutorial/writing-in-typst/) - [001_使用Typst写作](Documentation/Sources/001_writing-in-typst.typ) （[PDF](Documentation/PDF/001_使用Typst写作.pdf)） @20240717
+1. [Tutorial > Writing in Typst](https://typst.app/docs/tutorial/writing-in-typst/) - [001_使用Typst写作](Documentation/Sources/001_writing-in-typst.typ) （[PDF-草稿](Documentation/PDF/001_使用Typst写作.pdf)） @20240717
 2. [Tutorial > Formatting](https://typst.app/docs/tutorial/formatting/) - [002_把文档格式化处理](Documentation/Sources/002_formatting.typ) （[PDF-草稿](Documentation/PDF/002_文档格式化.pdf)）@20240723
+3. [Tutorial > Advanced Styling](https://typst.app/docs/tutorial/advanced-styling/) - [003_高级排版样式](Documentation/Sources/003_advanced-styling.typ) （[PDF-草稿](Documentation/PDF/003_高级样式.pdf)）@20240725
 
 ## My Favorites
 
