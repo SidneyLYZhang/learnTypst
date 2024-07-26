@@ -2,6 +2,8 @@
 
 主体由 [Typst](https://typst.app) 的官方教程翻译而来。以及一部分我自己觉得有用/常用的脚本和模板。
 
+同时，这个仓库也是我练习Typst的一个记录。
+
 ## 翻译内容
 
 翻译以下内容：
@@ -12,7 +14,7 @@
 
 ## My Favorites
 
-_暂空缺_
+1. [教程参考 - 草稿](MyFavorites/001_tutorial-reference.typ) : 一些额外的我认为很有价值的参考信息。
 
 ## From Typst Offical
 
