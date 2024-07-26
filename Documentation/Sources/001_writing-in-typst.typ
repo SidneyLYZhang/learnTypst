@@ -1,7 +1,7 @@
 #set text(font:("Consolas", "Source Han Sans SC"))
 #set text(lang: "zh")
 #show emph: text.with(font: ("Linux Libertine","STKaiti"))
-#show link: text.with(fill: color.blue)
+#show link: text.with(fill: blue)
 
 = 用Typst写作
 
@@ -138,7 +138,7 @@ we don't take action soon!
         例如， `image` 函数期望一个指向图像文件的路径。它将无法通过传递一段文本或其他图像作为路径参数来获取图像。这就是为什么在这里只允许字符串的原因。相反，字符串在任何需要内容的地方都是有效的，因为文本是一种有效的内容类型。\
       ],
       fill: aqua,
-      stroke : color.blue,
+      stroke : blue,
       radius: 8pt, 
       inset: 18pt
     )
