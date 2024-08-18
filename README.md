@@ -8,9 +8,13 @@
 
 翻译以下内容：
 
-1. [Tutorial > Writing in Typst](https://typst.app/docs/tutorial/writing-in-typst/) - [001_使用Typst写作](Documentation/Sources/001_writing-in-typst.typ) （[PDF-草稿](Documentation/PDF/001_使用Typst写作.pdf)） @20240717
-2. [Tutorial > Formatting](https://typst.app/docs/tutorial/formatting/) - [002_把文档格式化处理](Documentation/Sources/002_formatting.typ) （[PDF-草稿](Documentation/PDF/002_文档格式化.pdf)）@20240723
-3. [Tutorial > Advanced Styling](https://typst.app/docs/tutorial/advanced-styling/) - [003_高级排版样式](Documentation/Sources/003_advanced-styling.typ) （[PDF-草稿](Documentation/PDF/003_高级样式.pdf)）@20240725
+1. [Tutorial > Writing in Typst](https://typst.app/docs/tutorial/writing-in-typst/) - [001_使用Typst写作](Documentation/Sources/001_writing-in-typst.typ) （[PDF-草稿](Documentation/PDF/001_使用Typst写作.pdf)） _last@20240717_
+2. [Tutorial > Formatting](https://typst.app/docs/tutorial/formatting/) - [002_把文档格式化处理](Documentation/Sources/002_formatting.typ) （[PDF-草稿](Documentation/PDF/002_文档格式化.pdf)）_last@20240723_
+3. [Tutorial > Advanced Styling](https://typst.app/docs/tutorial/advanced-styling/) - [003_高级排版样式](Documentation/Sources/003_advanced-styling.typ) （[PDF-草稿](Documentation/PDF/003_高级排版样式.pdf)）_last@20240818_
+4. [Tutorial > Making a Template](https://typst.app/docs/tutorial/making-a-template/) - [004_制作模板](Documentation/Sources/004_making-a-template.typ) （[PDF-草稿](Documentation/PDF/004_制作模板.pdf)）_last@20240818_
+5. [Guides > Guide for LaTeX users](https://typst.app/docs/guides/guide-for-latex-users/) - [011_LaTeX用户指南](Documentation/Sources/011_guide-for-latex-users.typ) （[PDF-草稿](Documentation/PDF/011_LaTeX用户指南.pdf)）_@20240818_
+
+
 
 ## My Favorites
 
