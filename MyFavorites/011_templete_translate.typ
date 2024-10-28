@@ -146,28 +146,3 @@
 
   doc
 }
-
-
-#show: translate.with(
-  title: "Lambda演算教程导论", 
-  authors: ((
-      name: "Raúl Rojas",
-      affiliation: "Freie Universität Berlin",
-      email: ""
-    ),),
-  translators: ((
-    name: "Liangyi Zhang",
-    affiliation : "https://lyzhang.me",
-    email:"zly@lyzhang.me"
-  ),),
-  oriurl: "https://arxiv.org/abs/1503.09060",
-  abstract:lorem(60),
-  date: "Version 2.0, 2015",
-  updateData: "2024-10-25"
-)
-
-= 定义
-#lorem(155)
-
-= 细节
-#lorem(70)
