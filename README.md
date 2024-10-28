@@ -19,7 +19,11 @@
 ## My Favorites
 
 1. [教程参考 - 草稿](MyFavorites/001_tutorial-reference.typ) : 一些额外的我认为很有价值的参考信息。
-2. [翻译论文的模板](MyFavorites/011_templete_translate.typ) : 用来处理自己翻译的一些论文的模板，目前还算好用。
+2. 常用模板：
+    - [翻译论文的模板](MyFavorites/011_templete_translate.typ) : 用来处理自己翻译的一些论文的模板，目前还算好用。
+    - [个人小文的PDF模板](MyFavorites/012_templete_blog.typ) : 还行，基本满足现阶段需要。
+    - [周报模板](MyFavorites/013_templete_weekly_report.typ) : 公司周报的模板，好用，但不好转docx，这个有点遗憾。
+
 
 ## From Typst Offical
 
