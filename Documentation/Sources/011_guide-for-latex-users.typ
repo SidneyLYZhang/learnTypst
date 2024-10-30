@@ -110,3 +110,109 @@ To write this list in Typst...
   #align(center, image("images/5-right-yulan-2.png"))
 ])
 
+通过合适的缩进，嵌套列表可以轻松实现。
+之间添加一个空行将生成一个更#link("https://typst.app/docs/reference/model/list/#parameters-tight")[宽松]的列表。
+
+要获取一个#link("https://typst.app/docs/reference/model/enum/")[有序列表]（即，enumerate） ，只需使用 `+` 号代替连字符（`-`）。
+对于#link("https://typst.app/docs/reference/model/terms/")[术语列表]（即，description），使用 `/ 术语：解释` 来创建（即，`/ Term: List`）。
+
+== 如何使用命令？
+
+LaTeX还是大量使用命令（以反斜线开头）。这些宏命令用于影响排版过程并插入和对内容的操纵。
+一些命令接受参数，通常用花括号括起来：```latex \cite{rasmus}```。
+
+Typst区分了#link("https://typst.app/docs/reference/scripting/#blocks")[markup模式和代码模式]。默认情况下是markup模式，您可以组合文本并应用语法结构，
+例如使用星号 `*` 来加粗文本(*```typst *星号加粗文本* ```*)。代码模式则类似编程语言，例如Python，提供输入和执行代码段的选项。
+
+在Typst的markup中，您可以使用井号（`#`）转换到代码模式以调用单个命令（或表达式）。
+例如，您可以使用函数来将项目分割成不同的#link("https://typst.app/docs/reference/scripting/#modules")[文件]
+或根据某些#link("https://typst.app/docs/reference/scripting/#conditionals")[条件]渲染文本。
+在代码模式中，您可以使用方括号（`[ ]`）括起来的普通markup内容。 在代码模式中，这些内容将被视为变量的普通值。
+
+#box(height: 200pt,
+  columns(2, gutter: 11pt)[
+  ```typst 
+First, a rectangle:
+#rect()
+
+Let me show how to do
+#underline([_underlined_ text])
+
+We can also do some maths:
+#calc.max(3, 2 * 4)
+
+And finally a little loop:
+#for x in range(3) [
+  Hi #x.
+]
+```
+
+  #align(center, image("images/5-right-yulan-3.png"))
+])
+
+函数调用始终涉及到函数名称（如 #link("https://typst.app/docs/reference/visualize/rect/")[`rect`]、
+#link("https://typst.app/docs/reference/text/underline/")[`underline`]、
+#link("https://typst.app/docs/reference/foundations/calc/#functions-max")[`calc.max`]、
+#link("https://typst.app/docs/reference/foundations/array/#definitions-range")[`range`]），
+后跟*圆括号*（与LaTeX不同，LaTeX中如果宏不需要参数，方括号和花括号是可选的）。
+圆括号中的参数列表取决于具体函数，更多细节可以参看#link("https://typst.app/docs/reference/")[Typst的参考指导]。
+
+=== 参数 / Arguments
+
+一个函数可以有多个参数。一些参数是位置参数，即您只需提供值：
+例如，函数 ```typst #lower("SCREAM")``` 将其参数转换为小写。
+许多函数使用命名参数而不是位置参数来提高可读性。例如，矩形的尺寸和描边是使用命名参数定义的：
+
+#box(height: 100pt,
+  columns(2, gutter: 11pt)[
+  ```typst 
+#rect(
+  width: 2cm,
+  height: 1cm,
+  stroke: red,
+)
+
+```
+
+  #align(center, image("images/5-right-yulan-4.png"))
+])
+
+你可以通过首先输入参数的名称（在这里是宽度`width`、高度`height`和笔划`stroke`），然后是一个冒号`:`，接着是值（`2cm`、`1cm`、`red`）。
+你可以在每个函数的#link("https://typst.app/docs/reference/")[参考页面]或自动补全面板中找到可用的命名参数。
+命名参数类似于LaTeX环境的配置方式，例如，你可以键入 ```latex \begin{enumerate}[label={\alph*)}]``` 来启动一个带有 `a）`、`b）`等标签的列表。
+
+通常，你想向函数添加一些#link("https://typst.app/docs/reference/foundations/content/")[文本内容]。
+例如，LaTeX命令 ```latex \underline{备选 A}``` 在Typst中是 ```typst #underline([备选 A])```。
+方括号表明是一个值是#link("https://typst.app/docs/reference/foundations/content/")[文本内容]。在这些括号中，你可以使用普通标记。
+然而，对于这样一个简单的构造来说，括号就有些太多了。这就是为什么你也可以在括号后面移动尾随内容参数（并且如果它们变得空了，可以省略括号）。
+
+#box(height: 100pt,
+  columns(2, gutter: 11pt)[
+  ```typst 
+Typst is an #underline[alternative]
+to LaTeX.
+
+#rect(fill: aqua)[Get started here!]
+```
+
+  #align(center, image("images/5-right-yulan-5.png"))
+])
+
+=== 数据类型
+
+可能你已经发现这些参数具有明显的数据类型。Typst支持许多#link("https://typst.app/docs/reference/foundations/type/")[数据类型]。
+下面是一个表格，其中包含一些最重要的数据类型以及如何编写它们。为了指定这些类型的值，您必须处于代码模式！
+
+#table(
+  columns: (1fr,2fr), 
+  stroke: none,
+  table.header[*数据类型*][*例子*],
+  table.hline(),
+  [#link("https://typst.app/docs/reference/foundations/content/")[内容/content]],[```typst [*fast* typesetting] ```],
+  [#link("https://typst.app/docs/reference/foundations/str/")[字符串/string]],[```typst "Pietro S. Author" ```],
+  [#link("https://typst.app/docs/reference/foundations/int/")[整数/integer]],[```typst 23 ```],
+  [#link("https://typst.app/docs/reference/foundations/float/")[浮点数/float]],[```typst 1.459 ```],
+  [#link("https://typst.app/docs/reference/layout/length/")[绝对长度]],[```typst 12pt, 5in, 0.3cm, ... ```],
+  [#link("https://typst.app/docs/reference/layout/ratio/")[相对长度]],[```typst 65% ```],
+)
+
